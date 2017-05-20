@@ -1,0 +1,282 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="icon" href="http://icons.iconarchive.com/icons/iconblock/remixed/256/Plane-icon.png">
+    <meta charset="utf-8" />
+    <script src="../Java Script/jquery-3.1.1.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="../Java Script/site.js"></script>
+    <script src="../Java Script/pictureLibrary.js"></script>
+    <link href="../Css folder/siteStyle.css" rel="stylesheet" />
+</head>
+
+
+<body>
+    <div class="container">
+
+        <div id="menu">
+
+            <div class="row">
+                <header>
+                    <nav class="navbar navbar-default">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="../Index.html"><span class="textColorBlue ">F</span>LYBRICE</a>
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav"></ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="../Index.html"><span class="textColorBlue">Home</span></a></li>
+                                <li><a href="AboutUs.html">Abous Us</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </nav>
+
+                    <div class="jumbotron">
+                        <h1><span class="textColorBlue ">FlyBryce</span> Come Fly With Us</h1>
+                    </div>
+                </header>
+            </div>
+
+        </div>
+
+        <!--------------------------------------------------------------->
+
+
+
+        <div id="main_area">
+            <!-- Slider -->
+            <div class="row">
+                <div class="col-sm-6" id="slider-thumbs">
+                    <!-- Bottom switcher of slider -->
+                    <ul class="hide-bullets">
+                        <li class="col-sm-3">
+                            <a class="thumbnail" id="carousel-selector-16">
+                                <img src="../Picture Library/london1.jpg">
+                            </a>
+                        </li>
+                        <li class="col-sm-3">
+                            <a class="thumbnail" id="carousel-selector-1"><img src="../Picture Library/london2.jpeg"></a>
+                        </li>
+                        <li class="col-sm-3">
+                            <a class="thumbnail" id="carousel-selector-2"><img src="../Picture Library/brazil1.jpg"></a>
+                        </li>
+                        <li class="col-sm-3">
+                            <a class="thumbnail" id="carousel-selector-3"><img src="../Picture Library/brazil2.jpg"></a>
+                        </li>
+                        <li class="col-sm-3">
+                            <a class="thumbnail" id="carousel-selector-4"><img src="../Picture Library/china1.jpg"></a>
+                        </li>
+                        <li class="col-sm-3">
+                            <a class="thumbnail" id="carousel-selector-5"><img src="../Picture Library/china2.jpg"></a>
+                        </li>
+                        <li class="col-sm-3">
+                            <a class="thumbnail" id="carousel-selector-6"><img src="../Picture Library/germany1.jpg"></a>
+                        </li>
+                        <li class="col-sm-3">
+                            <a class="thumbnail" id="carousel-selector-7"><img src="../Picture Library/germany2.jpg"></a>
+                        </li>
+                        <li class="col-sm-3">
+                            <a class="thumbnail" id="carousel-selector-8"><img src="../Picture Library/newyork1.jpg"></a>
+                        </li>
+                        <li class="col-sm-3">
+                            <a class="thumbnail" id="carousel-selector-9"><img src="../Picture Library/newyork2.jpg"></a>
+                        </li>
+                        <li class="col-sm-3">
+                            <a class="thumbnail" id="carousel-selector-10"><img src="../Picture Library/sydney1.jpg"></a>
+                        </li>
+                        <li class="col-sm-3">
+                            <a class="thumbnail" id="carousel-selector-11"><img src="../Picture Library/sydney2.jpg"></a>
+                        </li>
+                        <li class="col-sm-3">
+                            <a class="thumbnail" id="carousel-selector-12"><img src="../Picture Library/switzerland1.jpg"></a>
+                        </li>
+                        <li class="col-sm-3">
+                            <a class="thumbnail" id="carousel-selector-13"><img src="../Picture Library/switzerland2.jpg"></a>
+                        </li>
+                        <li class="col-sm-3">
+                            <a class="thumbnail" id="carousel-selector-14"><img src="../Picture Library/paris1.jpg"></a>
+                        </li>
+                        <li class="col-sm-3">
+                            <a class="thumbnail" id="carousel-selector-15"><img src="../Picture Library/paris2.jpg"></a>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+                <div class="col-sm-6">
+                    <div class="col-xs-12" id="slider">
+                        <!-- Top part of the slider -->
+                        <div class="row">
+                            <div class="col-sm-12" id="carousel-bounding-box">
+                                <div class="carousel slide" id="myCarousel">
+                                    <!-- Carousel items -->
+                                    <div class="carousel-inner">
+                                        <div class="active item" data-slide-number="16">
+                                            <img src="../Picture Library/london1.jpg">
+                                        </div>
+                                        <div class="item" data-slide-number="1">
+                                            <img src="../Picture Library/london2.jpeg">
+                                        </div>
+                                        <div class="item" data-slide-number="2">
+                                            <img src="../Picture Library/brazil1.jpg">
+                                        </div>
+                                        <div class="item" data-slide-number="3">
+                                            <img src="../Picture Library/brazil2.jpg">
+                                        </div>
+                                        <div class="item" data-slide-number="4">
+                                            <img src="../Picture Library/china1.jpg">
+                                        </div>
+                                        <div class="item" data-slide-number="5">
+                                            <img src="../Picture Library/china2.jpg">
+                                        </div>
+
+                                        <div class="item" data-slide-number="6">
+                                            <img src="../Picture Library/germany1.jpg">
+                                        </div>
+
+                                        <div class="item" data-slide-number="7">
+                                            <img src="../Picture Library/germany2.jpg">
+                                        </div>
+
+                                        <div class="item" data-slide-number="8">
+                                            <img src="../Picture Library/newyork1.jpg">
+                                        </div>
+
+                                        <div class="item" data-slide-number="9">
+                                            <img src="../Picture Library/newyork2.jpg">
+                                        </div>
+
+                                        <div class="item" data-slide-number="10">
+                                            <img src="../Picture Library/sydney1.jpg">
+                                        </div>
+
+                                        <div class="item" data-slide-number="11">
+                                            <img src="../Picture Library/sydney2.jpg">
+                                        </div>
+
+                                        <div class="item" data-slide-number="12">
+                                            <img src="../Picture Library/switzerland1.jpg">
+                                        </div>
+                                        <div class="item" data-slide-number="13">
+                                            <img src="../Picture Library/switzerland2.jpg">
+                                        </div>
+                                        <div class="item" data-slide-number="14">
+                                            <img src="../Picture Library/paris1.jpg">
+                                        </div>
+                                        <div class="item" data-slide-number="15">
+                                            <img src="../Picture Library/paris2.jpg">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/Slider-->
+            </div>
+        </div>
+
+
+        <!-------------------------------------------------------------->
+
+        <footer>
+            <div id="footer" class="jumbotron row">
+                <table>
+
+                    <tr>
+                        <th>Get in touch with us</th>
+                        <th>Pages</th>
+                        <th>Latest destinations</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>FlyBrice company Inc</h4>
+                            Biah st. 1234
+                            <br />
+                            Someplace 16425 Earth
+                            <br />
+                        </td>
+                        <td><a href="AboutUs.html">About Us</a></td>
+                        <td>
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            050-1234567
+                            <br />
+                            email@domainname.com
+                        </td>
+                        <td><a href="contact.html">Contact Us</a></td>
+                        <td>
+                            Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><!----></td>
+                        <td><!----></td>
+                        <td>
+                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <!--  Social media/share -->
+            <div id="share-buttons">
+
+
+                <!-- Email -->
+                <a href="mailto:?Subject=Simple Share Buttons&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 https://simplesharebuttons.com">
+                    <img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" />
+                </a>
+
+                <!-- Facebook -->
+                <a href="http://www.facebook.com/sharer.php?u=https://simplesharebuttons.com" target="_blank">
+                    <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+                </a>
+
+                <!-- Google+ -->
+                <a href="https://plus.google.com/share?url=https://simplesharebuttons.com" target="_blank">
+                    <img src="https://simplesharebuttons.com/images/somacro/google.png" alt="Google" />
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://simplesharebuttons.com" target="_blank">
+                    <img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" />
+                </a>
+
+                <!-- Pinterest -->
+                <a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());">
+                    <img src="https://simplesharebuttons.com/images/somacro/pinterest.png" alt="Pinterest" />
+                </a>
+
+
+
+                <!-- Twitter -->
+                <a href="https://twitter.com/share?url=https://simplesharebuttons.com&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank">
+                    <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+                </a>
+
+
+
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>

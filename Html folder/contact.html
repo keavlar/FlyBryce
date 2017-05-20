@@ -1,0 +1,265 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="icon" href="http://icons.iconarchive.com/icons/iconblock/remixed/256/Plane-icon.png">
+    <script src="../Java Script/jquery-3.1.1.js"></script>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/css/bootstrapValidator.min.css" />
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/js/bootstrapValidator.min.js"> </script>
+    <script src="../Java Script/contactForm.js"></script>
+    <link href="../Css folder/siteStyle.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+
+        <div id="menu">
+
+            <div class="row">
+                <header>
+                    <nav class="navbar navbar-default">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="../Index.html"><span class="textColorBlue ">F</span>LYBRICE</a>
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav"></ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="../Index.html"><span class="textColorBlue">Home</span></a></li>
+                                <li><a href="AboutUs.html">Abous Us</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </nav>
+
+                    <div class="jumbotron">
+                        <h1><span class="textColorBlue ">FlyBryce</span> Come Fly With Us</h1>
+                    </div>
+                </header>
+            </div>
+
+        </div>
+
+
+        <div class="row">
+
+
+            <form class="well form-horizontal" action=" " method="post" id="contact_form">
+                <fieldset>
+
+                    <!-- Form Name -->
+                    <legend>Contact Us Today!</legend>
+
+                    <!-- Text input-->
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">First Name</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input name="first_name" placeholder="First Name" class="form-control" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Text input-->
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Last Name</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input name="last_name" placeholder="Last Name" class="form-control" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">E-Mail</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                <input name="email" placeholder="E-Mail Address" class="form-control" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Text input-->
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Phone #</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                                <input name="phone" placeholder="(845)555-1212" class="form-control" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--date-->
+
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Flight Date</label>
+                        <div class="col-md-4 dateContainer">
+                            <div class="input-group date" id="datetimePicker">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                <input type="text" class="form-control" name="date" placeholder="YYYY/MM/DD" />
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Leave us a message</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                                <textarea class="form-control" name="comment" placeholder="Your message here..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div id="myDialog" class="modal fade">
+                        <div class="modal-dialog modal-content">
+
+                            <!-- Dialog header: -->
+                            <div class="modal-header">
+                                <button class="close" data-dismiss="modal">&times;</button>
+                                <h4>Success</h4>
+                            </div>
+
+                            <!-- Dialog body: -->
+                            <div class="modal-body">
+                                <p>Your contact information accepted!</p>
+                                <p>We will get back to you.</p>
+                            </div>
+
+                            <!-- Dialog footer: -->
+                            <div class="modal-footer">
+                                <a class="btn btn-success" data-dismiss="modal">OK</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <!-- Button -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label"></label>
+                        <div class="col-md-4">
+                            <button type="submit" class="btn btn-warning btn-info" data-toggle="modal">Send <span class="glyphicon glyphicon-send"></span></button>
+                        </div>
+                    </div>
+
+                </fieldset>
+            </form>
+
+
+        </div>
+
+
+
+
+        <footer>
+            <div id="footer" class="jumbotron row">
+                <table>
+
+                    <tr>
+                        <th>Get in touch with us</th>
+                        <th>Pages</th>
+                        <th>Latest destinations</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>FlyBrice company Inc</h4>
+                            Biah st. 1234
+                            <br />
+                            Someplace 16425 Earth
+                            <br />
+                        </td>
+                        <td><a href="AboutUs.html">About Us</a></td>
+                        <td>
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            050-1234567
+                            <br />
+                            email@domainname.com
+                        </td>
+                        <td><a href="contact.html">Contact Us</a></td>
+                        <td>
+                            Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><!----></td>
+                        <td><!----></td>
+                        <td>
+                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="share-buttons">
+
+
+                <!-- Email -->
+                <a href="mailto:?Subject=Simple Share Buttons&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 https://simplesharebuttons.com">
+                    <img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" />
+                </a>
+
+                <!-- Facebook -->
+                <a href="http://www.facebook.com/sharer.php?u=https://simplesharebuttons.com" target="_blank">
+                    <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+                </a>
+
+                <!-- Google+ -->
+                <a href="https://plus.google.com/share?url=https://simplesharebuttons.com" target="_blank">
+                    <img src="https://simplesharebuttons.com/images/somacro/google.png" alt="Google" />
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://simplesharebuttons.com" target="_blank">
+                    <img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" />
+                </a>
+
+                <!-- Pinterest -->
+                <a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());">
+                    <img src="https://simplesharebuttons.com/images/somacro/pinterest.png" alt="Pinterest" />
+                </a>
+
+
+                <!-- Twitter -->
+                <a href="https://twitter.com/share?url=https://simplesharebuttons.com&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank">
+                    <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+                </a>
+
+
+
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>
+
+
